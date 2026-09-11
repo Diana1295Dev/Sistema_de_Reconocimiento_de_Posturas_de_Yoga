@@ -25,6 +25,7 @@
 - [Diferencias con el notebook académico original](#diferencias-con-el-notebook-académico-original)
 - [Limitaciones conocidas](#limitaciones-conocidas)
 - [Estructura del repositorio](#estructura-del-repositorio)
+- [Capturas](#capturas)
 
 ---
 
@@ -191,4 +192,7 @@ El detalle completo está en la primera celda de ese notebook y en
 ├── backend/            # API FastAPI (código, tests, README)
 └── frontend/           # interfaz web estática (HTML/CSS/JS, README)
 ```
-<img width="1066" height="591" alt="image" src="https://github.com/user-attachments/assets/49559b15-d53e-49f1-9464-e57ecb907dd9" />
+
+## Capturas
+
+<img width="1066" height="591" alt="Interfaz web mostrando una predicción del modelo" src="https://github.com/user-attachments/assets/49559b15-d53e-49f1-9464-e57ecb907dd9" />

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sistema de Reconocimiento de Posturas de Yoga</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Sistema de Reconocimiento de Posturas de Yoga</h1>
+    <p class="subtitle">Sube una foto de una postura y el modelo la identificará entre 5 posturas: Perro boca abajo, Diosa, Plancha, Árbol y Guerrero II.</p>
+  </header>
+
+  <main class="layout">
+    <section class="panel upload-panel">
+      <label id="drop-zone" for="file-input" class="drop-zone">
+        <img id="preview" class="preview" alt="Vista previa de la imagen" hidden />
+        <span id="drop-zone-text" class="drop-zone-text">
+          Arrastra una imagen aquí o haz clic para seleccionarla<br />
+          <small>JPG, PNG o WEBP — máx. 10&nbsp;MB</small>
+        </span>
+      </label>
+      <input id="file-input" type="file" accept="image/jpeg,image/png,image/webp,image/bmp" hidden />
+
+      <button id="analyze-btn" class="primary-btn" type="button" disabled>
+        Analizar postura
+      </button>
+
+      <p id="error-message" class="error-message" role="alert" hidden></p>
+    </section>
+
+    <section class="panel result-panel">
+      <h2>Resultado</h2>
+      <div id="result-empty" class="result-empty">
+        Sube una imagen y presiona "Analizar postura" para ver el resultado aquí.
+      </div>
+
+      <div id="result-loading" class="result-loading" hidden>
+        <div class="spinner" aria-hidden="true"></div>
+        <span>Analizando imagen…</span>
+      </div>
+
+      <div id="result-content" class="result-content" hidden>
+        <p class="predicted-pose">
+          Postura detectada: <strong id="predicted-pose-name"></strong>
+        </p>
+        <p class="confidence">
+          Confianza: <strong id="confidence-value"></strong>
+        </p>
+        <ul id="probability-bars" class="probability-bars"></ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      API: <code id="api-base-url-label"></code> ·
+      <a href="#" id="health-link" target="_blank" rel="noopener">estado del servicio</a>
+    </p>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

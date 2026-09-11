@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Modelo entrenado (se descarga desde Colab, no se versiona)
+backend/models/*.h5
+backend/models/*.keras
+backend/models/labels.json
+backend/models/model_metrics.json
+!backend/models/.gitkeep
+
+# Node (por si se usa alguna herramienta de frontend en el futuro)
+node_modules/
+
+# Entornos / secretos
+.env
+.env.local
+
+# Sistema operativo / editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Pytest
+.pytest_cache/

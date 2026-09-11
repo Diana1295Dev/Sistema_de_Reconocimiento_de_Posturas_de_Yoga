@@ -1,0 +1,4 @@
+# Dependencias para correr training/train_local.py (entrenamiento local, alternativa a Colab).
+# Reutiliza el venv de backend/ (ya tiene tensorflow-cpu, numpy, pillow) y agrega:
+kagglehub>=0.3,<1.0
+scikit-learn>=1.4,<2.0

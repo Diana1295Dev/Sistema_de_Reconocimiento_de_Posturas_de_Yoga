@@ -98,3 +98,4 @@ producción), por lo que no requieren haber entrenado en Colab para poder correr
 ├── backend/              # API FastAPI (código, tests, README)
 └── frontend/             # interfaz web estática (HTML/CSS/JS, README)
 ```
+<img width="1066" height="591" alt="image" src="https://github.com/user-attachments/assets/49559b15-d53e-49f1-9464-e57ecb907dd9" />

@@ -15,6 +15,13 @@
   box-sizing: border-box;
 }
 
+/* La regla [hidden] del navegador pierde contra cualquier `display` de nuestras propias clases
+   (misma especificidad, pero la del navegador es de origen mas bajo). Sin esto, elementos como
+   .result-loading (display: flex) se quedan visibles aunque JS les ponga el atributo hidden. */
+[hidden] {
+  display: none !important;
+}
+
 body {
   margin: 0;
   font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
